@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/con"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/linear_image"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+    android:id="@+id/linar_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/linear_image"
+    app:layout_constraintRight_toRightOf="parent"
+    android:text="title"
+    android:textSize="20sp"
+    app:layout_constraintTop_toTopOf="@id/linear_image"
+    />
+    <TextView
+        android:id="@+id/linar_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/linear_image"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="price"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        app:layout_constraintBottom_toBottomOf="@id/linear_image"
+        />
+</android.support.constraint.ConstraintLayout>
